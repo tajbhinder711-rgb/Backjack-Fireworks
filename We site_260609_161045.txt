@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blackjack Fireworks | Washington's Premier Pyro Store</title>
+<script src="https://cdn.jsdelivr.net/npm/mathjs@11.8.0/lib/browser/math.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+.neon-glow {
+text-shadow: 0 0 10px rgba(249, 115, 22, 0.6), 0 0 20px rgba(239, 68, 68, 0.4);
+}
+.bg-pyro {
+background-color: #0b0f19;
+background-image: radial-gradient(rgba(249, 115, 22, 0.15) 1px, transparent 0);
+background-size: 24px 24px;
+}
+</style>
+</head>
+<body class="bg-pyro text-gray-100 font-sans selection:bg-orange-500 selection:text-white">
+
+<!-- Header / Nav -->
+<header class="border-b border-gray-800 bg-gray-900/80 backdrop-blur-md sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+<div class="flex items-center gap-3">
+<span class="text-3xl">🎆</span>
+<h1 class="text-2xl font-black tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-red-500 to-yellow-400 uppercase italic neon-glow">
+Blackjack Fireworks
+</h1>
+</div>
+<nav class="flex gap-6 text-sm font-semibold tracking-wide uppercase text-gray-400">
+<a href="#products" class="hover:text-orange-500 transition-colors">Products</a>
+<a href="#planner" class="hover:text-orange-500 transition-colors">Haul Planner</a>
+<a href="#location" class="hover:text-orange-500 transition-colors">Find Us</a>
+</nav>
+</div>
+</header>
+
+<!-- Hero Section -->
+<section class="relative py-20 px-4 text-center overflow-hidden max-w-5xl mx-auto">
+<div class="absolute -top-20 left-1/2 -translate-x-1/2 w-72 h-72 bg-red-600/20 rounded-full blur-3xl pointer-events-none"></div>
+<span class="inline-block bg-orange-500/10 text-orange-400 text-xs font-bold tracking-widest uppercase px-3 py-1.5 rounded-full border border-orange-500/30 mb-4">
+Washington's Biggest Selection & Best Prices
+</span>
+<h2 class="text-4xl sm:text-6xl font-black tracking-tight text-white mb-6 uppercase">
+LIGHT UP THE NORTHWEST SKY
+</h2>
+<p class="text-gray-400 text-lg max-w-2xl mx-auto mb-8">
+Find us in the iconic <span class="text-yellow-400 font-semibold underline decoration-wavy">Big Yellow Building</span> right off I-5 in Vancouver, WA. Fully stocked, freshly remodeled, and blasting ice-cold A/C.
+</p>
+<div class="flex flex-wrap justify-center gap-4">
+<a href="#products" class="bg-gradient-to-r from-orange-500 to-red-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-orange-500/20 hover:scale-[1.02] transition-transform">
+Browse Fireworks
+</a>
+<a href="#location" class="bg-gray-800 hover:bg-gray-700 text-white font-bold px-8 py-4 rounded-xl border border-gray-700 transition-colors">
+Get Directions
+</a>
+</div>
+</section>
+
+<!-- Featured Products -->
+<section id="products" class="max-w-7xl mx-auto px-4 py-16 border-t border-gray-900">
+<div class="mb-12 text-center sm:text-left">
+<h3 class="text-2xl font-extrabold text-white uppercase tracking-wider">Heavy Hitters & Crowd Pleasers</h3>
+<p class="text-gray-400 text-sm">Stock up on premium 500g cakes, artillery shells, and massive assortments.</p>
+</div>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Item 1 -->
+<div class="bg-gray-900 border border-gray-800 rounded-2xl p-5 flex flex-col justify-between hover:border-orange-500/40 transition-colors">
+<div>
+<span class="text-xs font-bold text-red-500 uppercase tracking-widest">Show in a Box</span>
+<h4 class="text-lg font-bold text-white mt-1">Bootlegger's Dream</h4>
+<p class="text-gray-400 text-xs mt-2">A massive 500g multi-shot cake that fills the sky with golden willows and crackling crackle flags.</p>
+</div>
+<div class="mt-6 flex justify-between items-center pt-4 border-t border-gray-800/60">
+<span class="text-xl font-black text-orange-400">$`89.99</span>
+<span class="text-xs bg-emerald-500/10 text-emerald-400 px-2 py-1 rounded font-semibold">In Stock</span>
+</div>
+</div>
+
+<!-- Item 2 -->
+<div class="bg-gray-900 border border-gray-800 rounded-2xl p-5 flex flex-col justify-between hover:border-orange-500/40 transition-colors">
+<div>
+<span class="text-xs font-bold text-yellow-500 uppercase tracking-widest">Artillery Shells</span>
+<h4 class="text-lg font-bold text-white mt-1">Excalibur Kit</h4>
+<p class="text-gray-400 text-xs mt-2">The #1 selling canister shell of all time. 24 powerful, unique breaks with high-density reloadable tubes.</p>
+</div>
+<div class="mt-6 flex justify-between items-center pt-4 border-t border-gray-800/60">
+<span class="text-xl font-black text-orange-400">`$119.99</span>
+<span class="text-xs bg-emerald-500/10 text-emerald-400 px-2 py-1 rounded font-semibold">Top Seller</span>
+</div>
+</div>
+
+<!-- Item 3 -->
+<div class="bg-gray-900 border border-gray-800 rounded-2xl p-5 flex flex-col justify-between hover:border-orange-500/40 transition-colors">
+<div>
+<span class="text-xs font-bold text-orange-500 uppercase tracking-widest">Max 500g Fountain</span>
+<h4 class="text-lg font-bold text-white mt-1">Taco Tuesday</h4>
+<p class="text-gray-400 text-xs mt-2">Insane duration fountain packed with multi-colored pearls, intense pine needle crackle, and hidden whistles.</p>
+</div>
+<div class="mt-6 flex justify-between items-center pt-4 border-t border-gray-800/60">
+<span class="text-xl font-black text-orange-400">$`44.99</span>
+<span class="text-xs bg-emerald-500/10 text-emerald-400 px-2 py-1 rounded font-semibold">In Stock</span>
+</div>
+</div>
+
+<!-- Item 4 -->
+<div class="bg-gray-900 border border-gray-800 rounded-2xl p-5 flex flex-col justify-between hover:border-orange-500/40 transition-colors">
+<div>
+<span class="text-xs font-bold text-purple-500 uppercase tracking-widest">Loud Salutes</span>
+<h4 class="text-lg font-bold text-white mt-1">M-90 Firecrackers</h4>
+<p class="text-gray-400 text-xs mt-2">Classic, loud, waterproof construction bricks. Maximum legal powder load per cracker for ultimate decibels.</p>
+</div>
+<div class="mt-6 flex justify-between items-center pt-4 border-t border-gray-800/60">
+<span class="text-xl font-black text-orange-400">`$14.99</span>
+<span class="text-xs bg-amber-500/10 text-amber-400 px-2 py-1 rounded font-semibold">Low Stock</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Interactive Section (Budget Haul Planner) -->
+<section id="planner" class="max-w-3xl mx-auto px-4 py-12">
+<div class="bg-gradient-to-b from-gray-900 to-black border border-gray-800 rounded-3xl p-6 sm:p-8 shadow-2xl relative">
+<div class="absolute top-0 right-8 transform -translate-y-1/2 bg-yellow-400 text-black font-black text-xs px-3 py-1 uppercase tracking-wider rounded-md shadow-lg">
+VIP Reward Pricing Active
+</div>
+
+<div class="mb-6">
+<h3 class="text-xl font-black text-white uppercase tracking-wide">Build Your Custom Show Budget</h3>
+<p class="text-gray-400 text-xs mt-1">Adjust item counts to instantly see your final cost, package weight estimate, and VIP cashback rewards.</p>
+</div>
+
+<!-- Input Controls -->
+<div class="space-y-4">
+<div>
+<div class="flex justify-between items-center mb-1">
+<label class="text-xs font-bold uppercase text-gray-300">Bootlegger's Dream Cakes ($`89.99)</label>
+<span id="cake-val" class="text-sm font-mono text-orange-400 bg-gray-800 px-2 py-0.5 rounded">0</span>
+</div>
+<input type="range" id="cake-qty" min="0" max="10" value="0" class="w-full h-2 bg-gray-800 rounded-lg appearance-none cursor-pointer accent-orange-500" oninput="calculateHaul()">
+</div>
+
+<div>
+<div class="flex justify-between items-center mb-1">
+<label class="text-xs font-bold uppercase text-gray-300">Excalibur Artillery Shell Kits (`$119.99)</label>
+<span id="shell-val" class="text-sm font-mono text-orange-400 bg-gray-800 px-2 py-0.5 rounded">0</span>
+</div>
+<input type="range" id="shell-qty" min="0" max="5" value="0" class="w-full h-2 bg-gray-800 rounded-lg appearance-none cursor-pointer accent-orange-500" oninput="calculateHaul()">
+</div>
+
+<div>
+<div class="flex justify-between items-center mb-1">
+<label class="text-xs font-bold uppercase text-gray-300">Taco Tuesday Fountains ($`44.99)</label>
+<span id="fountain-val" class="text-sm font-mono text-orange-400 bg-gray-800 px-2 py-0.5 rounded">0</span>
+</div>
+<input type="range" id="fountain-qty" min="0" max="10" value="0" class="w-full h-2 bg-gray-800 rounded-lg appearance-none cursor-pointer accent-orange-500" oninput="calculateHaul()">
+</div>
+</div>
+
+<!-- Output Dashboard Layout -->
+<div class="grid grid-cols-3 gap-3 mt-8 pt-6 border-t border-gray-800 text-center">
+<div class="bg-gray-900/50 p-3 rounded-xl border border-gray-800/50">
+<span class="block text-[10px] uppercase font-bold text-gray-400 tracking-wider">Est. Weight</span>
+<span id="total-weight" class="text-sm font-black text-white mt-1 block">0 lbs</span>
+</div>
+<div class="bg-gray-900/50 p-3 rounded-xl border border-gray-800/50">
+<span class="block text-[10px] uppercase font-bold text-gray-400 tracking-wider">VIP Points</span>
+<span id="vip-points" class="text-sm font-black text-yellow-400 mt-1 block">0 pts</span>
+</div>
+<div class="bg-gradient-to-br from-orange-950/40 to-red-950/40 p-3 rounded-xl border border-orange-900/30">
+<span class="block text-[10px] uppercase font-bold text-orange-400 tracking-wider">Total Due</span>
+<span id="total-price" class="text-base font-black text-white mt-1 block">`$0.00</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Location & VIP Banner -->
+<section id="location" class="max-w-7xl mx-auto px-4 py-16 border-t border-gray-900">
+<div class="bg-gradient-to-r from-amber-500 to-orange-600 rounded-3xl p-8 text-black flex flex-col md:flex-row justify-between items-center gap-8">
+<div>
+<span class="text-xs font-extrabold uppercase tracking-widest bg-black/10 px-2.5 py-1 rounded-md">Join VIP Rewards</span>
+<h3 class="text-3xl font-black mt-2 tracking-tight uppercase">Get a BOGO Free Coupon Instantly!</h3>
+<p class="text-black/80 max-w-xl text-sm mt-2">
+Sign up for our text notifications or show up at our main showroom to claim buy-one-get-one deals on select heavy cakes all summer long.
+</p>
+<div class="mt-4 font-mono font-bold text-sm bg-black/5 p-3 rounded-xl inline-block border border-black/10">
+📍 1314 NE 106th St, Vancouver, WA 98686
+</div>
+</div>
+<div class="w-full md:w-auto shrink-0">
+<a href="https://maps.google.com" target="_blank" class="block text-center bg-black text-white font-black px-8 py-4 rounded-2xl shadow-xl hover:bg-gray-900 transition-colors uppercase tracking-wide text-sm">
+Open in Google Maps ↗
+</a>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-black text-gray-500 text-xs py-8 text-center border-t border-gray-950">
+<p class="mb-2">© 2026 Blackjack Fireworks WA. All rights reserved.</p>
+<p class="max-w-md mx-auto px-4 text-gray-600">Please check local city and county ordinances before discharging fireworks. Always prioritize safety, designate an adult shooter, and keep water nearby.</p>
+</footer>
+
+<!-- Logic Script -->
+<script>
+function calculateHaul() {
+// Get current slider values
+const cakeQty = parseInt(document.getElementById('cake-qty').value);
+const shellQty = parseInt(document.getElementById('shell-qty').value);
+const fountainQty = parseInt(document.getElementById('fountain-qty').value);
+
+// Update visible counts
+document.getElementById('cake-val').innerText = cakeQty;
+document.getElementById('shell-val').innerText = shellQty;
+document.getElementById('fountain-val').innerText = fountainQty;
+
+// Math.js precise floating point evaluations
+const cakeTotal = math.evaluate(${cakeQty} * 89.99); const shellTotal = math.evaluate(``${shellQty} * 119.99);
+const fountainTotal = math.evaluate(${fountainQty} * 44.99); const rawTotal = math.evaluate(``${cakeTotal} + ${shellTotal} + ${fountainTotal});
+
+// Weight calculation: Cakes ~8lbs, Shell Kits ~12lbs, Fountains ~5lbs
+const estWeight = math.evaluate((${cakeQty} * 8) + (${shellQty} * 12) + (${fountainQty} * 5)`);
+
+// VIP Points reward system (`$1 = 1 point)
+const vipPoints = Math.floor(rawTotal);
+
+// Update Dashboard outputs
+document.getElementById('total-price').innerText = '$' + rawTotal.toFixed(2);
+document.getElementById('total-weight').innerText = estWeight + ' lbs';
+document.getElementById('vip-points').innerText = vipPoints + ' pts';
+}
+
+// Initial build run
+calculateHaul();
+</script>
+</body>
+</html>
